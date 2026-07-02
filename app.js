@@ -51,8 +51,16 @@ if (temperature01==30){
     
 }
 
+// Question 5: Comparison Operators
+// Create three comparison operations:
 
+// Check if 15 is strictly equal to "15"
+// Check if 20 is greater than 15 AND less than 25
+// Check if 10 is not equal to 10 OR 5 is greater than 3
 
+let stricklyCheck="15"===15;
+let checkGreaterAndLessThanNumber=20 > 15 < 25;
+let useNotOperatorCheckGreaterThan=10 != 10 || 5 > 3;
 
 
 
