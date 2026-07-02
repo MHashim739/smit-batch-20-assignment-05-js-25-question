@@ -62,6 +62,21 @@ let stricklyCheck="15"===15;
 let checkGreaterAndLessThanNumber=20 > 15 < 25;
 let useNotOperatorCheckGreaterThan=10 != 10 || 5 > 3;
 
+// Question 6: Array Manipulation - Basics
+// Create an array colors with values ["red", "green", "blue"]. Then:
+
+// Add "yellow" to the end
+// Remove the first element
+// Insert "purple" at index 1
+// Console.log the final array and its length
+
+let colors=['red','green','blue'];
+colors.push('yellow');
+colors.shift();
+colors.splice(1,0,'purple');
+console.log(colors,colors.length);
+
+
 
 
 
