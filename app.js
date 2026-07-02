@@ -88,6 +88,22 @@ fruits.splice(2,1);
 fruits.splice(2,1,'dragonfruit');
 let newArr=fruits.splice(1,2);
 
+// Question 8: for Loop - Number Sequence
+// Write a for loop that prints numbers from 1 to 10, but skips number 5 using continue, and stops at 8 using break. Also calculate the sum of all printed numbers.
 
+let sum=0;
+for (let i=1; i<=10; i++){
+    if (i == 5){
+        continue
+    } if (i >= 8){
+        break
+    }
+    console.log(i);
+    sum+=i
+    
+    
+    
+}
 
+console.log(sum);
 
