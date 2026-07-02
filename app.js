@@ -76,6 +76,17 @@ colors.shift();
 colors.splice(1,0,'purple');
 console.log(colors,colors.length);
 
+// Question 7: Array Manipulation - splice()
+// Start with array fruits = ["apple", "banana", "cherry", "date", "elderberry"]. Use splice() to:
+
+// Remove "cherry"
+// Replace "date" with "dragonfruit"
+// Extract the middle 3 elements into a new array
+
+let fruits=['apple','banana','cherry','date','elderberry'];
+fruits.splice(2,1);
+fruits.splice(2,1,'dragonfruit');
+let newArr=fruits.splice(1,2);
 
 
 
