@@ -26,8 +26,30 @@ let value04=8;
 
 let value05=15;
 value05 -= 2;
-console.log(value05);
 
+// Question 3: String Concatenation and Case Conversion
+// Create two string variables: firstName = "alex" and lastName = "SMITH". Concatenate them with a space, then convert the result to proper case (first letter uppercase, rest lowercase). Also find the total length of the full name.
+
+let firstname='Alex';
+let lastName='Smith';
+let fullName=`${firstname} ${lastName}`;
+let fullNameSaveLength=fullName.length;
+
+// Question 4: if-else Conditional Logic
+// Write an if-else statement that checks a temperature variable. If temperature is above 30, console.log "Hot day". If between 20 and 30 (inclusive), console.log "Pleasant day". Otherwise, console.log "Cold day". Test with temperature = 25.
+
+let temperature01=30;
+let temperature02=20;
+let temperature03=30;
+if (temperature01==30){
+    console.log("Hot day");
+    if(temperature02=20 || temperature03<30){
+        console.log("Pleasant day");
+    }
+}else{
+    console.log('cold day');
+    
+}
 
 
 
