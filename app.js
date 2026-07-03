@@ -107,3 +107,18 @@ for (let i=1; i<=10; i++){
 
 console.log(sum);
 
+// Question 9: Nested for Loop - Pattern
+// Write nested for loops to create this pattern:
+
+// *
+// **
+// ***
+// ****
+// *****
+
+for (let i=1; i<=5; i++){
+    let starPattern='';
+    for (let j=1; j<=i; j++){
+        starPattern+='*'
+    }
+}
