@@ -121,4 +121,24 @@ for (let i=1; i<=5; i++){
     for (let j=1; j<=i; j++){
         starPattern+='*'
     }
+    console.log(starPattern);
+    
 }
+
+// Question 10: String Methods - Search and Extract
+// Given text = "The quick brown fox jumps over the lazy dog":
+
+// Find the position of "fox"
+// Extract "brown fox" using substring/slice
+// Check if the text contains "dog"
+// Get the character at position 10
+
+let givenText="The quick brown fox jumps over the lazy dog";
+let savePositionFox= givenText.indexOf("fox")
+let saveExtractBrownFox=givenText.substring(10,19);
+let checkDogContain=givenText.includes("dog");
+let getCharacterPosition10=givenText.charAt(10);
+console.log(getCharacterPosition10);
+
+
+
