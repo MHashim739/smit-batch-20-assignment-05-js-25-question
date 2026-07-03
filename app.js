@@ -167,6 +167,17 @@ let givenNumGetFloorValue=Math.floor(givenNum);
 let givenNumGetCeilingValue=Math.ceil(givenNum);
 let givenNumFormat4DecimalPlaces=givenNum.toFixed(4)
 
+// Question 13: Random Number Generation
+// Generate:
+
+// A random integer between 1 and 100 (inclusive)
+// A random decimal between 0 and 1 with 3 decimal places
+// A random number between 50 and 75 (inclusive)
+
+let NumberGenerateBwt1To100=Math.floor(Math.random()*100)+1;
+let NumberGenerateDecimalBwt0To1=Math.random(2).toFixed(3);
+let NumberGenerateBwt50To75=Math.floor(Math.random()*(75- 50+1))+50;
+
 
 
 
