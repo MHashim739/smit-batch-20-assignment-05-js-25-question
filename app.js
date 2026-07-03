@@ -151,6 +151,22 @@ let givenSentenceChange01=givenSentence.replace("JavaScript","coding");
 let givenSentenceChange02=givenSentence.replaceAll("JavaScript","js");
 let givenSentenceChange03=givenSentence.replace("awesome","AWESOME");
 
+// Question 12: Number Rounding and Formatting
+// Given num = 123.456789:
+
+// Round to 2 decimal places
+// Round to nearest integer
+// Get the floor value
+// Get the ceiling value
+// Format to show exactly 4 decimal places
+
+let givenNum=123.456789;
+let givenNum2DecimalPlace=givenNum.toFixed(2);
+let givenNumNearestInteger=Math.round(givenNum);
+let givenNumGetFloorValue=Math.floor(givenNum);
+let givenNumGetCeilingValue=Math.ceil(givenNum);
+let givenNumFormat4DecimalPlaces=givenNum.toFixed(4)
+
 
 
 
