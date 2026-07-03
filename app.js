@@ -138,7 +138,19 @@ let savePositionFox= givenText.indexOf("fox")
 let saveExtractBrownFox=givenText.substring(10,19);
 let checkDogContain=givenText.includes("dog");
 let getCharacterPosition10=givenText.charAt(10);
-console.log(getCharacterPosition10);
+
+// Question 11: String Replacement
+// Given sentence = "I love JavaScript and JavaScript is awesome":
+
+// Replace the first "JavaScript" with "coding"
+// Replace ALL "JavaScript" with "JS"
+// Replace "awesome" with uppercase "AWESOME"
+
+let givenSentence="I love JavaScript and JavaScript is awesome";
+let givenSentenceChange01=givenSentence.replace("JavaScript","coding");
+let givenSentenceChange02=givenSentence.replaceAll("JavaScript","js");
+let givenSentenceChange03=givenSentence.replace("awesome","AWESOME");
+
 
 
 
