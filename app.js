@@ -300,3 +300,22 @@ while(number1>=1){
     number1--
     
 }
+
+// Question 20: do...while Loop - User Input Simulation
+// Create a do...while loop that simulates asking for a password. Start with enteredPassword = "" and keep "asking" (incrementing a counter) until enteredPassword === "secret123" or 5 attempts are made;
+
+
+let enterPassword="";
+let attempt=0;
+do{
+    attempt++;
+    console.log('atempt',attempt);
+    if(attempt ===5){
+        enterPassword="secret123";
+        console.log(enterPassword);
+    }
+    
+}while(enterPassword !='secret123' && attempt <= 5);
+
+
+
