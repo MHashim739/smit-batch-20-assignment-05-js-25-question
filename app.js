@@ -282,3 +282,21 @@ switch (day) {
         console.log("invalid number");
 
 }
+
+
+// Question 19: while Loop - Countdown
+// Write a while loop that starts at 10 and counts down to 1, printing each number. Then print "Blast off!". Also calculate the factorial of 5 using a while loop.
+
+let number=10;
+while(number>=1){
+    console.log(number);
+    number--;
+    
+}
+let number1=5;
+let number2=1
+while(number1>=1){
+    number2=number1*number2
+    number1--
+    
+}
