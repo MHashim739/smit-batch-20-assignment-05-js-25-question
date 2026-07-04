@@ -252,3 +252,33 @@ function incrementCounter() {
 
 }
 
+// Question 18: switch Statement - Day of Week
+// Write a switch statement that takes a number (0-6) and returns the corresponding day name (0=Sunday, 1=Monday, etc.). Include a default case for invalid numbers.
+let saveDaysArray = ['sunday','monday' ,'tuesday' , 'wednesday', 'thursday', 'friday', 'saturday'];
+let day=0;
+switch (day) {
+    case 0:
+        console.log(saveDaysArray[0]);
+        break
+    case 1:
+        console.log(saveDaysArray[1]);
+        break
+    case 2:
+        console.log(saveDaysArray[2]);
+        break
+    case 3:
+        console.log(saveDaysArray[3]);
+        break
+    case 4:
+        console.log(saveDaysArray [4]);
+        break
+    case 5:
+    console.log(saveDaysArray[5]);
+    break
+    case 6:
+        console.log(saveDaysArray[6]);
+        break
+    default:
+        console.log("invalid number");
+
+}
