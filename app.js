@@ -196,5 +196,29 @@ let stringToBoolean = "true";
 let convertStringToBoolean = Boolean(stringToBoolean);
 let typeCheck = typeof (convertStringToBoolean);
 
+// Question 15: Date and Time Operations
+// Create a Date object for the current time and:
+
+// Extract the year, month (0-11), and day
+// Get the hours in 24-hour format
+// Format it as "YYYY-MM-DD"
+// Create a specific date for December 25, 2024
+
+let currentDateAndTime=new Date();
+let currentDateAndTimeYears=currentDateAndTime.getFullYear();
+let currentDateAndTimeMonths=currentDateAndTime.getMonth();
+let currentDateAndTimeDay=currentDateAndTime.getDate();
+let getHours=new Date();
+let formatHourse=getHours.getHours();
+let dateAndTime=new Date();
+let formatYear=dateAndTime.getFullYear();
+let formatMonths=dateAndTime.getMonth()+1;
+let formatDate=dateAndTime.getDate();
+let concatinateYearMonthsDate=`${formatYear} ${formatMonths} ${formatDate}`;
+let specificDate=new Date(2024,11,25);
+
+
+
+
 
 
