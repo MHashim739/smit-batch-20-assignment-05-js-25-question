@@ -220,23 +220,35 @@ let specificDate = new Date(2024, 11, 25);
 // Question 16: Function - Basic Calculator
 // Write a function calculate that takes two numbers and an operator (+, -, *, /) as parameters and returns the result. Handle division by zero by returning "Error: Division by zero".
 
- function calculate(num1, num2, operators) {
+function calculate(num1, num2, operators) {
     if (operators == "+") {
         return num1 + num2;
     }
-        if (operators == "-") {
-            return num1 - num2;
-        }    
-            if (operators == "*") {
-                return num1 * num2;
-            }   
-                if (operators == "/") {
-                    if(num2==0 || num1==0){
-                            alert("invalid found")
-                    }
-                    return num1 / num2;
-                }
-            }
- 
+    if (operators == "-") {
+        return num1 - num2;
+    }
+    if (operators == "*") {
+        return num1 * num2;
+    }
+    if (operators == "/") {
+        if (num2 == 0 || num1 == 0) {
+            alert("invalid found")
+        }
+        return num1 / num2;
+    }
+}
 
+
+//             Question 17: Function - Local vs Global Variables
+// Create a global variable globalCounter = 0. Write a function incrementCounter that declares a local variable with the same name and increments it, while also incrementing the global variable. Show the difference after calling the function twice.
+
+
+
+let globalCounter = 0;
+function incrementCounter() {
+    let globalCounter = 0;
+    globalCounter++;
+    return globalCounter
+
+}
 
