@@ -204,21 +204,39 @@ let typeCheck = typeof (convertStringToBoolean);
 // Format it as "YYYY-MM-DD"
 // Create a specific date for December 25, 2024
 
-let currentDateAndTime=new Date();
-let currentDateAndTimeYears=currentDateAndTime.getFullYear();
-let currentDateAndTimeMonths=currentDateAndTime.getMonth();
-let currentDateAndTimeDay=currentDateAndTime.getDate();
-let getHours=new Date();
-let formatHourse=getHours.getHours();
-let dateAndTime=new Date();
-let formatYear=dateAndTime.getFullYear();
-let formatMonths=dateAndTime.getMonth()+1;
-let formatDate=dateAndTime.getDate();
-let concatinateYearMonthsDate=`${formatYear} ${formatMonths} ${formatDate}`;
-let specificDate=new Date(2024,11,25);
+let currentDateAndTime = new Date();
+let currentDateAndTimeYears = currentDateAndTime.getFullYear();
+let currentDateAndTimeMonths = currentDateAndTime.getMonth();
+let currentDateAndTimeDay = currentDateAndTime.getDate();
+let getHours = new Date();
+let formatHourse = getHours.getHours();
+let dateAndTime = new Date();
+let formatYear = dateAndTime.getFullYear();
+let formatMonths = dateAndTime.getMonth() + 1;
+let formatDate = dateAndTime.getDate();
+let concatinateYearMonthsDate = `${formatYear} ${formatMonths} ${formatDate}`;
+let specificDate = new Date(2024, 11, 25);
 
+// Question 16: Function - Basic Calculator
+// Write a function calculate that takes two numbers and an operator (+, -, *, /) as parameters and returns the result. Handle division by zero by returning "Error: Division by zero".
 
-
-
+ function calculate(num1, num2, operators) {
+    if (operators == "+") {
+        return num1 + num2;
+    }
+        if (operators == "-") {
+            return num1 - num2;
+        }    
+            if (operators == "*") {
+                return num1 * num2;
+            }   
+                if (operators == "/") {
+                    if(num2==0 || num1==0){
+                            alert("invalid found")
+                    }
+                    return num1 / num2;
+                }
+            }
+ 
 
 
