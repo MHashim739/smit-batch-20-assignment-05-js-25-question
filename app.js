@@ -254,8 +254,8 @@ function incrementCounter() {
 
 // Question 18: switch Statement - Day of Week
 // Write a switch statement that takes a number (0-6) and returns the corresponding day name (0=Sunday, 1=Monday, etc.). Include a default case for invalid numbers.
-let saveDaysArray = ['sunday','monday' ,'tuesday' , 'wednesday', 'thursday', 'friday', 'saturday'];
-let day=0;
+let saveDaysArray = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+let day = 0;
 switch (day) {
     case 0:
         console.log(saveDaysArray[0]);
@@ -270,11 +270,11 @@ switch (day) {
         console.log(saveDaysArray[3]);
         break
     case 4:
-        console.log(saveDaysArray [4]);
+        console.log(saveDaysArray[4]);
         break
     case 5:
-    console.log(saveDaysArray[5]);
-    break
+        console.log(saveDaysArray[5]);
+        break
     case 6:
         console.log(saveDaysArray[6]);
         break
@@ -287,35 +287,91 @@ switch (day) {
 // Question 19: while Loop - Countdown
 // Write a while loop that starts at 10 and counts down to 1, printing each number. Then print "Blast off!". Also calculate the factorial of 5 using a while loop.
 
-let number=10;
-while(number>=1){
+let number = 10;
+while (number >= 1) {
     console.log(number);
     number--;
-    
+
 }
-let number1=5;
-let number2=1
-while(number1>=1){
-    number2=number1*number2
+let number1 = 5;
+let number2 = 1
+while (number1 >= 1) {
+    number2 = number1 * number2
     number1--
-    
+
 }
 
 // Question 20: do...while Loop - User Input Simulation
 // Create a do...while loop that simulates asking for a password. Start with enteredPassword = "" and keep "asking" (incrementing a counter) until enteredPassword === "secret123" or 5 attempts are made;
 
 
-let enterPassword="";
-let attempt=0;
-do{
+let enterPassword = "";
+let attempt = 0;
+do {
     attempt++;
-    console.log('atempt',attempt);
-    if(attempt ===5){
-        enterPassword="secret123";
+    console.log('atempt', attempt);
+    if (attempt === 5) {
+        enterPassword = "secret123";
         console.log(enterPassword);
     }
+
+} while (enterPassword != 'secret123' && attempt <= 5);
+
+// Question 21: Array Methods with for Loop
+// Given numbers = [12, 45, 78, 23, 56, 89, 34]:
+
+// Use a for loop to find the maximum value
+// Use a for loop to calculate the average
+// Create a new array with only numbers greater than 50
+// Reverse the array without using reverse() method
+
+let givenArrayNumber=[12, 45, 78, 23, 56, 89, 34];
+let findMaximumValue=givenArrayNumber[0];
+for (let i=0; i<givenArrayNumber.length; i++){
+    if (givenArrayNumber[i]>findMaximumValue){
+        findMaximumValue=givenArrayNumber[i];
+    }
+}
+let calculateAverage=0;
+for (let i=0; i<givenArrayNumber.length; i++){
+    calculateAverage+=givenArrayNumber[i];
+}
+let averageValue=calculateAverage/givenArrayNumber.length;
+let newArrayGreaterThan50=[];
+for (let i=0; i<givenArrayNumber.length; i++){
+    if (givenArrayNumber[i]>50){
+        newArrayGreaterThan50.push(givenArrayNumber[i]);
+    }
+}
+let reversedArray=[];
+for (let i=givenArrayNumber.length-1; i>=0; i--){
+    reversedArray.push(givenArrayNumber[i])
+}
+
+// Question 22: Event Handling Simulation
+// Create a function handleClick that:
+
+// Gets a value from an input field with id "username"
+// Checks if it's empty and shows an alert if so
+// Otherwise, displays "Welcome, [username]!" in a paragraph with id "greeting"
+// Resets the input field after greeting
+
+function handleClick(){
+    let save01=document.getElementById('userName')
+    if (save01.value===''){
+        alert('fill the input field');
+    }else if(save01.value){
+        let save02=document.getElementById('greeting');
+        let save03=save02.value=`welcome ${save01.value}`;
+        alert (save03);
+        console.log(save03);
+        save02.innerHTML=save03;
+        save01.value=''
+        
+        
+    }
     
-}while(enterPassword !='secret123' && attempt <= 5);
+}
 
 
 
