@@ -373,5 +373,23 @@ function handleClick(){
     
 }
 
+// Question 23: Form Validation Function
+// Write a function validateForm that:
+
+// Takes email and password as parameters
+// Returns true if email contains "@" and password length ≥ 8
+// Otherwise returns false with specific error messages
+// Test with multiple test cases
+
+function validateForm(email,password){
+    if (!email.includes('@')){
+        console.log('this character missing @');
+        return false;
+    }else if (password.length<=8){
+        console.log('your Password character is less than 8 atleast 8 character');
+        return false;
+    }
+    return true;
+}
 
 
