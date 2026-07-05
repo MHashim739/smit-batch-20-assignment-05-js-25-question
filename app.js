@@ -325,26 +325,26 @@ do {
 // Create a new array with only numbers greater than 50
 // Reverse the array without using reverse() method
 
-let givenArrayNumber=[12, 45, 78, 23, 56, 89, 34];
-let findMaximumValue=givenArrayNumber[0];
-for (let i=0; i<givenArrayNumber.length; i++){
-    if (givenArrayNumber[i]>findMaximumValue){
-        findMaximumValue=givenArrayNumber[i];
+let givenArrayNumber = [12, 45, 78, 23, 56, 89, 34];
+let findMaximumValue = givenArrayNumber[0];
+for (let i = 0; i < givenArrayNumber.length; i++) {
+    if (givenArrayNumber[i] > findMaximumValue) {
+        findMaximumValue = givenArrayNumber[i];
     }
 }
-let calculateAverage=0;
-for (let i=0; i<givenArrayNumber.length; i++){
-    calculateAverage+=givenArrayNumber[i];
+let calculateAverage = 0;
+for (let i = 0; i < givenArrayNumber.length; i++) {
+    calculateAverage += givenArrayNumber[i];
 }
-let averageValue=calculateAverage/givenArrayNumber.length;
-let newArrayGreaterThan50=[];
-for (let i=0; i<givenArrayNumber.length; i++){
-    if (givenArrayNumber[i]>50){
+let averageValue = calculateAverage / givenArrayNumber.length;
+let newArrayGreaterThan50 = [];
+for (let i = 0; i < givenArrayNumber.length; i++) {
+    if (givenArrayNumber[i] > 50) {
         newArrayGreaterThan50.push(givenArrayNumber[i]);
     }
 }
-let reversedArray=[];
-for (let i=givenArrayNumber.length-1; i>=0; i--){
+let reversedArray = [];
+for (let i = givenArrayNumber.length - 1; i >= 0; i--) {
     reversedArray.push(givenArrayNumber[i])
 }
 
@@ -356,21 +356,21 @@ for (let i=givenArrayNumber.length-1; i>=0; i--){
 // Otherwise, displays "Welcome, [username]!" in a paragraph with id "greeting"
 // Resets the input field after greeting
 
-function handleClick(){
-    let save01=document.getElementById('userName')
-    if (save01.value===''){
+function handleClick() {
+    let save01 = document.getElementById('userName')
+    if (save01.value === '') {
         alert('fill the input field');
-    }else if(save01.value){
-        let save02=document.getElementById('greeting');
-        let save03=save02.value=`welcome ${save01.value}`;
-        alert (save03);
+    } else if (save01.value) {
+        let save02 = document.getElementById('greeting');
+        let save03 = save02.value = `welcome ${save01.value}`;
+        alert(save03);
         console.log(save03);
-        save02.innerHTML=save03;
-        save01.value=''
-        
-        
+        save02.innerHTML = save03;
+        save01.value = ''
+
+
     }
-    
+
 }
 
 // Question 23: Form Validation Function
@@ -381,15 +381,36 @@ function handleClick(){
 // Otherwise returns false with specific error messages
 // Test with multiple test cases
 
-function validateForm(email,password){
-    if (!email.includes('@')){
+function validateForm(email, password) {
+    if (!email.includes('@')) {
         console.log('this character missing @');
         return false;
-    }else if (password.length<=8){
+    } else if (password.length <= 8) {
         console.log('your Password character is less than 8 atleast 8 character');
         return false;
     }
     return true;
 }
+
+// Question 24: Temperature Converter
+// Create a function convertTemperature that:
+
+// Takes a temperature and a unit ("C" or "F") as parameters
+// Converts Celsius to Fahrenheit: (C × 9/5) + 32
+// Converts Fahrenheit to Celsius: (F - 32) × 5/9
+// Returns the converted value with 1 decimal place
+
+function convertTemperature(temp, unit) {
+    if (unit === 'c') {
+        return ((temp * 9 / 5) + 32).toFixed(1);
+    } else if (temp === 'f') {
+        return ((tem - 32) * 5 / 9).toFixed(1)
+    }
+    return 'found'
+}
+
+
+
+
 
 
