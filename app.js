@@ -409,8 +409,47 @@ function convertTemperature(temp, unit) {
     return 'found'
 }
 
+// Question 25: Shopping Cart Array Operations
+// Create an array cart = [] and write these functions:
 
+// addItem(name, price): Adds item object to cart
+// removeItem(name): Removes item by name
+// calculateTotal(): Returns sum of all item prices
+// applyDiscount(percent): Applies discount to total
+// listItems(): Returns array of just item names
 
+let cart=[];
+function items(name,price){
+    cart.push({name:name,
+        price:price})
+}
+function removeItem(name){
+    cart=cart.filter(item=> item.name!==name);
+}
+function calculate(){
+    let total=0;
+    for (let item of cart){
+        total+=item.price;
+    }
+    return total;
+}
 
+function discount(persent){
+    let total=calculate();
+    let discount=(total*persent)/100;
+    return total - discount;
+}
+function itemsList(){
+    return cart.map(item =>item.name);
+}
+items("Book", 500);
+items("Pen", 50);
+items("Mouse", 1000);
 
+console.log(cart);
+console.log(calculate()); // 1550
+console.log(discount(10)); // 1395
+console.log(itemsList()); // ["Book", "Pen", "Mouse"]
 
+removeItem("Pen");
+console.log(cart);
